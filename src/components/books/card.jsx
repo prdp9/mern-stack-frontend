@@ -42,7 +42,7 @@ const BookCard = ({ book }) => {
         <div className='shadow-xl  rounded-md  w-[250px] overflow-hidden pb-5 h-[370px]'>
             <Link to={`/books/${book._id}`}>
 
-                <img src={`http://localhost:8080/${book.image}`} alt="book cover"
+                <img src={`${process.env.API_URL}/${book.image}`} alt="book cover"
                     className="h-[200px] w-[100%] object-cover "
                 />
                 <div className="p-3">
